@@ -1,15 +1,16 @@
 #include <stdio.h>
-#include <unistd.h>
 #include <stdlib.h>
+#include <unistd.h>
+
 void func(void)
 {
     printf("i am func\n");
 }
+
 int main()
 {
     atexit(func);
-    printf("---begin---");
-    //fflush(stdout);
+    printf("---begin---\n");
     //_exit(2);
     //printf("---end---\n");
     return 0;
